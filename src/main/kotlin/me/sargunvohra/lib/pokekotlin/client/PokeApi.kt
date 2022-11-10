@@ -124,6 +124,8 @@ interface PokeApi {
 
     fun getPokedex(id: Int): Pokedex
 
+    fun getPokedexExtended(id: Int): PokedexExtended
+
     fun getVersion(id: Int): Version
 
     fun getVersionGroup(id: Int): VersionGroup

@@ -23,9 +23,26 @@ data class Pokedex(
         val versionGroups: List<NamedApiResource>
 )
 
+data class PokedexExtended(
+        val id: Int,
+        val name: String,
+        val isMainSeries: Boolean,
+        val descriptions: List<Description>,
+        val names: List<Name>,
+        val pokemonEntries: List<PokemonEntryExtended>,
+        val region: NamedApiResource?,
+        val versionGroups: List<NamedApiResource>
+)
+
 data class PokemonEntry(
         val entryNumber: Int,
         val pokemonSpecies: NamedApiResource
+)
+
+data class PokemonEntryExtended(
+        val entryNumber: Int,
+        val pokemonSpecies: NamedApiResource,
+        val types: List<PokemonType>
 )
 
 data class Version(

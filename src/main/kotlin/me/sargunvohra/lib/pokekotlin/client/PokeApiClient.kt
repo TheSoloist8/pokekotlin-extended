@@ -196,6 +196,8 @@ class PokeApiClient(
 
     override fun getPokedex(id: Int) = service.getPokedex(id).result()
 
+    override fun getPokedexExtended(id: Int) = service.getPokedexExtended(id).result()
+
     override fun getVersion(id: Int) = service.getVersion(id).result()
 
     override fun getVersionGroup(id: Int) = service.getVersionGroup(id).result()

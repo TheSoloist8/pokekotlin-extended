@@ -125,6 +125,8 @@ interface RxPokeApi {
 
     fun getPokedex(id: Int): Observable<Pokedex>
 
+    fun getPokedexExtended(id: Int): Observable<PokedexExtended>
+
     fun getVersion(id: Int): Observable<Version>
 
     fun getVersionGroup(id: Int): Observable<VersionGroup>

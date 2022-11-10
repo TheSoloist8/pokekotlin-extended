@@ -250,6 +250,9 @@ internal interface PokeApiService {
     @GET("pokedex/{id}/")
     fun getPokedex(@Path("id") id: Int): Call<Pokedex>
 
+    @GET("pokedex-extended/{id}/")
+    fun getPokedexExtended(@Path("id") id: Int): Call<PokedexExtended>
+
     @GET("version/{id}/")
     fun getVersion(@Path("id") id: Int): Call<Version>
 

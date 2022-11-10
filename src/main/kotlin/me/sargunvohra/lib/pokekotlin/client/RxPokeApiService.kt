@@ -250,6 +250,9 @@ internal interface RxPokeApiService {
     @GET("pokedex/{id}/")
     fun getPokedex(@Path("id") id: Int): Observable<Pokedex>
 
+    @GET("pokedex-extended/{id}/")
+    fun getPokedexExtended(@Path("id") id: Int): Observable<PokedexExtended>
+
     @GET("version/{id}/")
     fun getVersion(@Path("id") id: Int): Observable<Version>
 

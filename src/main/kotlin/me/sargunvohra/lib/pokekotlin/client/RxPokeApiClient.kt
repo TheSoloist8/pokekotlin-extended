@@ -188,6 +188,8 @@ class RxPokeApiClient(
 
     override fun getPokedex(id: Int) = service.getPokedex(id)
 
+    override fun getPokedexExtended(id: Int) = service.getPokedexExtended(id)
+
     override fun getVersion(id: Int) = service.getVersion(id)
 
     override fun getVersionGroup(id: Int) = service.getVersionGroup(id)
