@@ -332,9 +332,15 @@ data class TypePokemon(
 
 data class TypeRelations(
         val noDamageTo: List<NamedApiResource>,
+        val quarterDamageTo: List<NamedApiResource>?,
         val halfDamageTo: List<NamedApiResource>,
+        val singleDamageTo: List<NamedApiResource>?,
         val doubleDamageTo: List<NamedApiResource>,
+        val quadrupleDamageTo: List<NamedApiResource>?,
         val noDamageFrom: List<NamedApiResource>,
+        val quarterDamageFrom: List<NamedApiResource>?,
         val halfDamageFrom: List<NamedApiResource>,
-        val doubleDamageFrom: List<NamedApiResource>
+        val singleDamageFrom: List<NamedApiResource>?,
+        val doubleDamageFrom: List<NamedApiResource>,
+        val quadrupleDamageFrom: List<NamedApiResource>?
 )

@@ -42,7 +42,8 @@ data class PokemonEntry(
 data class PokemonEntryExtended(
         val entryNumber: Int,
         val pokemonSpecies: NamedApiResource,
-        val types: List<PokemonType>
+        val types: List<PokemonType>,
+        val artwork: String
 )
 
 data class Version(
